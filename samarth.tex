@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in Latex
+% Author : Samarth Mishra
+% License : MITS, Gwalior
+% Branch : IoT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\usepackage{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{array}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Samarth Mishra} \\ \vspace{8pt} 
+\begin{tabular}{c@{}}
+     {+91 9871847056} ~ 
+   \small{-}
+    \href{https://samarth5101.github.io/}{\color{Blue}{Portfolio}} ~ 
+    \small\\ \href{mailto:samarthmishra373@gmail.com}{\raisebox{-0.1\height}{\includegraphics[height=12pt]{Gmail.png}} \color{purple}{  \underline{Samarth's Mail}}} ~
+    \hspace{-0.5em}\small
+    \href{https://www.linkedin.com/in/samarth-mishra-440389133/}{\href{mailto:samarthmishra373@gmail.com}{\raisebox{-0.3\height}{\includegraphics[height=23pt]{linkedin.png}}}\color{purple}{\underline{LinkedIn}}}  ~
+    \small
+    \href{https://github.com/Samarth5101}{\raisebox{-0.2\height}{\includegraphics[height=15pt]{github.png}}\color{purple}{   \underline{GitHub}}}
+    \vspace{-6pt}\end{tabular}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{teal}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Madhav Institute of Technology and Science}{Gwalior, M.P., India}
+      {B. Tech in Internet of Things}{\textbf{November 2020 - August 2024}}
+    \vspace{-1pt}
+    
+    CGPA(till 7th sem) : 8.01
+  \resumeSubHeadingListEnd
+  \vspace{-20pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{teal}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{\href{https://www.hackerrank.com/profile/0901EO201050}{\color{blue}C}}, JavaScript, CSS, Python.} \\
+      \vspace{1pt}
+      
+     \textbf{\normalsize{Frameworks \& Libraries:}}{ \normalsize{Bootstrap, Material-UI, Tailwind CSS, Express.js, React.js, Node.js, Angular,  \\ \hspace{11.8em}SASS, LESS, PostCSS}, Flask, Django, OpenCV.} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Tools:}}{ \normalsize{Figma, Canva, Visual Studio Code(VSCode), Notion, GitHub, Git, MongoDB.}}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-20pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{teal}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Web Development Intern {\href{https://drive.google.com/file/d/1ouvkc0bzNij7loCGzaf1QBdajUbVz_ZJ/view?usp=sharing}{\raisebox{-0.2\height}{ 
+   \includegraphics[height=13pt]{hy.png}}}}}{}
+      {The Prime Step, Indore, India}{\textbf{January 2024 - June 2024}}
+      \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Developed and maintained dynamic }web applications using the MERN stack (MongoDB, Express.js, React, Node.js), improving user experience and performance by 30\%.}}
+            \resumeItem{\normalsize{\textbf{Implemented RESTful APIs} with Express.js and Node.js for seamless data integration and efficient back-end functionality, ensuring robust and scalable server-side operations.}}  
+            \resumeItem{\normalsize{\textbf{Collaborated with cross-functional teams} to design UI/UX and deploy user-centric features using React, enhancing the front-end interface and delivering responsive and accessible web designs.}}  
+      \resumeItemListEnd  
+\vspace{-1pt}
+    \resumeSubheading
+      {Business Operation Intern {\href{https://drive.google.com/file/d/1VJbvjg9TJLzh4ohgE7QDZyM-m0KxBPy0/view}{\raisebox{-0.2\height}{ 
+   \includegraphics[height=13pt]{hy.png}}}}}{} 
+      {R.J. and Sons, Jabalpur, India}{\textbf{June 2023 - July 2023}}
+      \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Optimized operational workflows} by implementing data-driven strategies, resulting in a 20\% increase in efficiency and productivity.}}
+        \resumeItem{\normalsize{\textbf{Conducted market analysis and competitor research} to identify business opportunities, leading to the development of new client acquisition strategies.}}
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-17pt}
+
+
+%-----------PROJECTS-----------
+\section{\color{teal}PROJECTS}
+\resumeSubHeadingListStart
+\vspace{-5pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\href{https://github.com/Samarth5101/Heart_Attack_Prediction_System.git}{\large\color{Blue}Heart Attack Prediction} \textbar\ } \textit{MERN, Python, Flask, NumPy, sklearn, Logistic Regression} & \textbf{\small May 2024} \\
+      \vspace{-22pt}
+    \end{tabular*}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Utilized Flask for backend development and integrated with Python libraries for data handling. Data was collected from Kaggle, trained with 1300++ dataset in CSV format. Leveraged HTML, CSS, JavaScript, and React to build and style the front end, ensuring responsiveness.}}
+        \vspace{0.8pt}
+        \resumeItem{\normalsize{Employed MongoDB via Mongoose for scalable data storage, implemented APIs, and used Axios for HTTP requests. Applied Numpy, Pandas, and Scikit-learn for data manipulation and machine learning model implementation, achieving 80\%+ accuracy.}}  
+    \resumeItemListEnd
+
+    \vspace{3pt}
+    
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\href{https://github.com/Samarth5101/Bus_Reservation_System.git}{\large\color{Blue}Bus Reservation System} \textbar\ } \textit{HTML, CSS, Python, Django} & \textbf{\small April 2023} \\
+      \vspace{-25pt}
+    \end{tabular*}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Developed a scalable bus ticket reservation system using Django for backend, and HTML and CSS for the front end. Employed AWS IoT Core and AWS Lambda to connect and process traffic sensor data in the cloud.}}
+        \vspace{1.3pt}
+        \resumeItem{\normalsize{Utilized AWS S3 for storing traffic signal timings, AWS RDS for database management, and integrated Python for data handling and system logic. Ensured secure data exchange and efficient performance across the platform.}}  
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-15pt}
+
+%-----------Publications---------------
+\section{\color{teal}ACHIEVEMENTS}
+    \vspace{-5pt}
+  \resumeItemListStart
+    \resumeItem{\normalsize{Participated in Rajiv Gandhi Proudyogiki Vishwavidyalaya State Level Hackathon 1.0}}\href{https://drive.google.com/file/d/1wsYAKWJCaHYN7mb-I-Owf-56jE7f83lM/view?usp=sharing}{\color{blue}\underline{Link}}
+    \vspace{-2pt}
+    
+    \resumeItem{\normalsize{Completed 7 - week Persistent Martian Summer Internship Program 2023}}\href{https://drive.google.com/file/d/1i8yPJ8sFAhsDCPnfdA-8ltPDkpAksCho/view?usp=sharing}{\color{blue}\underline{Link}}
+    \vspace{-2pt}
+
+\resumeItem{\normalsize{Participated in Tech X Summer 2.0 by IETE in 2022 and 2023}}\href{https://drive.google.com/file/d/1GI_D-Oigyi41uE2CWyjiQMADB8HaCTB8/view?usp=sharing}{\color{blue}\underline{Link}}
+    \vspace{-2pt}
+
+
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-12pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{teal}EXTRACURRICULAR ACTIVITIES}
+    \vspace{-10pt}
+      \resumeItemListStart
+      \resumeItem{\normalsize{\textbf{Class Representative} of branch Internet of Things, MITS \href{https://drive.google.com/file/d/15FbHq5OmCIvhS79ejWitgAqK0wZuGR8k/view?usp=sharing}{\color{blue}{\includegraphics[width=0.5cm]{hy.png}}} - } {July 2021 - June 2022}}    
+
+ \vspace{1pt}
+
+  \resumeItem{\normalsize{\textbf{User Interface Designer} in DLG, MITS Club - } {May 2021 - Feburary 2022}}    
+        \vspace{-3pt}
+        
+        \resumeItem{\normalsize{\textbf{Technical Team Member } in ACM, MITS Student Chapter \href{https://drive.google.com/file/d/14DgOhYTh1TJjmvsuqV4gPhyAq9LN3DWu/view?usp=sharing}{\color{blue}{\includegraphics[width=0.5cm]{hy.png}}} - }{January 2022 - January 2023} }
+        \vspace{-2.5pt}
+        
+\resumeItem{\normalsize{\textbf{Participated in CHIMERAX } by  ISTE Student Chapter, MANIT \href{https://drive.google.com/file/d/1hfP57braiGrckbVU8MP4T0WNBveHrsgq/view?usp=sharing}{\color{blue}{\includegraphics[width=0.5cm]{hy.png}}} - }{January 2021} }
+        \vspace{-2pt}
+      
+
+        % copy and paste above resumeItem block to add more 
+      \resumeItemListEnd 
+      
+\vspace{-12pt}
+
+\end{document}
